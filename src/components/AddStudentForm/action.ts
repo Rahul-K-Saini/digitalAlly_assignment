@@ -22,7 +22,6 @@ export async function addStudent(previousState: unknown | undefined, formData: F
 
         let res;
         if (id) {
-            // Update existing student
             res = await prisma.student.update({
                 where: { id },
                 data: {
@@ -35,7 +34,6 @@ export async function addStudent(previousState: unknown | undefined, formData: F
                 }
             });
         } else {
-            // Create new student
             res = await prisma.student.create({
                 data: {
                     name,

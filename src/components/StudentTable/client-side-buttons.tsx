@@ -21,10 +21,10 @@ export function Actions({ student }: any) {
                 isOpen={isOpen} 
                 setIsOpen={setIsOpen} 
                 isEdit={true}
-                studentData={student} // Pass the student data here
+                studentData={student} 
             />
-            <Pencil onClick={handleEdit} size={20} color="blue" /> {/* Fixed: Pencil should trigger handleEdit */}
-            <Trash onClick={handleDelete} color="red" size={20} /> {/* Fixed: Trash should trigger handleDelete */}
+            <Pencil onClick={handleEdit} size={20} color="blue" /> 
+            <Trash onClick={handleDelete} color="red" size={20} /> 
         </>
     );
 }
